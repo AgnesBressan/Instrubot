@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='doctor'>
+    <link name='link_0'>
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+      </inertial>
+      <visual name='visual'>
+        <pose frame=''>0 0 0 1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://doctor/meshes/doctor.obj</uri>
+            <scale>0.005 0.005 0.005</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='collision'>
+        <pose frame=''>0 0 0 1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://doctor/meshes/doctor.obj</uri>
+            <scale>0.005 0.005 0.005</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
