@@ -8,7 +8,7 @@ else
 fi
 cd ~/catkin_ws/src/
 cd instru_bot
-cd models && cp -r doctor/ ~/.gazebo/models/
+cd ~/catkin_ws/src/instru_bot/models && cp -r ./mesh ./doctor ~/.gazebo/models/
 cd ..
 cd ..
 cd ..

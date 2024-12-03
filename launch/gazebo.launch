@@ -6,7 +6,7 @@
     <arg name="debug" default="false"/>
     <arg name="verbose" default="false"/>
     <arg name="paused" default="false"/>
-    <arg name="world" default="$(find instru_bot)/worlds/simulation.world"/>
+    <arg name="world" default="$(find instrubot)/worlds/room.world"/>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="gui" value="$(arg gui)"/>
