@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <launch>
   
-  <include file="$(find cbr)/launch/gazebo.launch">
-    <arg name="world" value="$(find instrubot)/worlds/room.world"/>
+  <include file="$(find instrubot)/launch/gazebo.launch">
+    <arg name="world" value="$(find instrubot)/worlds/operating.world"/>
   </include>
   
 </launch>

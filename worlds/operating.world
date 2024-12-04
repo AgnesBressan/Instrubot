@@ -39,9 +39,6 @@
     <!-- turn off shadows {-->
     <scene>
       <shadows>false</shadows>
-      <sky>
-        <clouds/>
-      </sky>
     </scene>
     <!--}-->
 
@@ -86,12 +83,134 @@
     </model>
     <!--}-->
 
-    <!-- THE ARENA MODEL -->
-    <include>
-      <uri>model://mesh</uri>
-      <!-- Pose ( x y z r p y ) -->
-      <pose frame=''>0 0 0 0 0 0</pose>
-    </include>
+    <!-- Mesa -->
+    <!-- doctor -->
+    <model name="mesh">
+      <include>
+        <uri>model://mesh</uri>
+        <pose>-0.522 1.1 0.43 0 0 0</pose>
+      </include>
+    </model>
+
+    <!-- doctor -->
+    <model name="doctor1">
+      <include>
+        <uri>model://doctor</uri>
+        <pose>-0.182 -0.28 0 0 0 3.1415</pose>
+      </include>
+    </model>
+
+    <!-- doctor -->
+    <model name="doctor2">
+      <include>
+        <uri>model://doctor</uri>
+        <pose>-0.182 0.28 0 0 0 0</pose>
+      </include>
+    </model>
+
+    <!-- Chao -->
+    <model name="chao">
+      <include>
+        <uri>model://chao</uri>
+        <pose>0 0 0 0 0 0</pose>
+      </include>
+    </model>
+
+    <!-- Cama -->
+    <model name="bed">
+      <include>
+        <uri>model://bed</uri>
+        <pose>-0.145 0 0 0 0 0</pose>
+      </include>
+    </model>
+
+    <!-- Prateleiras -->
+    <model name="shelf1">
+      <include>
+        <uri>model://shelf</uri>
+        <pose>1.1 -1.33 0 0 0 3.1415</pose>
+      </include>
+    </model>
+
+    <!-- Prateleiras -->
+    <model name="shelf2">
+      <include>
+        <uri>model://shelf</uri>
+        <pose>0.4 -1.33 0 0 0 3.1415</pose>
+      </include>
+    </model>
+
+    <!-- Parede -->
+    <model name="parede1">
+      <include>
+        <uri>model://parede</uri>
+        <pose>0 -1.5 0.75 0 0 1.5708</pose>
+      </include>
+    </model>
+
+    <!-- Parede -->
+    <model name="parede2">
+      <include>
+        <uri>model://parede</uri>
+        <pose>0 1.5 0.75 0 0 1.5708</pose>
+      </include>
+    </model>
+
+    <!-- Parede -->
+    <model name="parede3">
+      <include>
+        <uri>model://parede</uri>
+        <pose>1.50 0 0.75 0 0 0</pose>
+      </include>
+    </model>
+
+    <!-- Anestesia -->
+    <model name="anest">
+      <include>
+        <uri>model://anest</uri>
+        <pose>0.8 -0.18 0 1.5708 0 1.5708</pose>
+      </include>
+    </model>
+
+    <!-- Cabinet small -->
+    <model name="small_cabinet">
+      <include>
+        <uri>model://small_cabinet</uri>
+        <pose>1.18 0.67 0 0 0 4.7123</pose>
+      </include>
+    </model>
+
+    <!-- Cabinet big -->
+    <model name="big_cabinet">
+      <include>
+        <uri>model://big_cabinet</uri>
+        <pose>-0.458 -1.35 0 1.5708 0 -1.5708</pose>
+      </include>
+    </model>
+
+    <!-- Monitor -->
+    <model name="monitor">
+      <include>
+        <uri>model://monitor</uri>
+        <pose>0.34 0.512 0.51 1.5708 0 4.7123</pose>
+      </include>
+    </model>
+
+    <!-- Camera -->
+    <!-- <model name="camera_sensor">
+      <include>
+        <uri>model://camera_sensor</uri>
+        <pose>0 0 0 -1.5708 0 0</pose>
+      </include>
+    </model> -->
+
+    <!-- Micro -->
+    <model name="micro">
+      <include>
+        <uri>model://micro</uri>
+        <pose>1.03 0.534 0.53 1.5708 0 1.5708</pose>
+      </include>
+    </model>
 
   </world>
 </sdf>

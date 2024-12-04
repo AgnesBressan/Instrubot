@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='parede'>
+    <link name='link'>
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.03 3 1.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 0.5</ambient> <!-- Transparência controlada aqui -->
+          <diffuse>0 0 0 0.5</diffuse> <!-- Preto semi-transparente -->
+          <specular>0.2 0.2 0.2 1</specular> <!-- Reflexo leve -->
+        </material>
+        <transparency>0.5</transparency> <!-- Meio transparente -->
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.03 3 1.5</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>

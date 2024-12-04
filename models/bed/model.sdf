@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='bed'>
+    <link name='link_0'>
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+      </inertial>
+      <visual name='visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://bed/meshes/bed.obj</uri>
+            <scale>0.05 0.05 0.05</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.9 0.9 0.85 1</ambient> <!-- Tom claro com um toque de bege -->
+          <diffuse>0.95 0.95 0.9 1</diffuse> <!-- Off-white suave -->
+          <specular>0.6 0.6 0.6 1</specular> <!-- Reflexo moderado para suavidade -->
+          <emissive>0 0 0 1</emissive> <!-- Sem emissão de luz -->
+        </material>
+      </visual>
+      <collision name='collision'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://bed/meshes/bed.obj</uri>
+            <scale>0.05 0.05 0.05</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

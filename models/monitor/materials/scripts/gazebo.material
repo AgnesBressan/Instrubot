@@ -1,0 +1,13 @@
+material Gazebo/ScreenTexture
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture screen_image.png
+      }
+    }
+  }
+}
